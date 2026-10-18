@@ -8,10 +8,10 @@ Este proyecto tiene dos ejercicios de Python y pruebas automatizadas sobre una p
 ## Qué incluye
 
 **Punto 1 - Número primo** (`ejercicios/numero_primo.py`)
-Pide un número y dice si es primo o no.
+Pide números y dice si cada uno es primo o no. Se repite hasta que se escribe `salir`.
 
 **Punto 2 - Ecuación cuadrática** (`ejercicios/ecuacion_cuadratica.py`)
-Pide los valores a, b y c y calcula las raíces de la ecuación.
+Pide los valores a, b y c y calcula las raíces de la ecuación. Se repite hasta que se escribe `salir`.
 
 **Punto 3 - Pruebas automatizadas**
 
@@ -36,7 +36,7 @@ PokeAPI (API, con requests) - `pruebas/api/test_pokeapi.py`
 | Carpeta | Contenido |
 |---|---|
 | `ejercicios/` | Puntos 1 y 2 |
-| `paginas/` | Una clase por cada pantalla de Saucedemo (Page Object Model) |
+| `paginas/` | Una clase por cada pantalla de Saucedemo |
 | `pruebas/` | Los casos de prueba de la web y de la API |
 | `resultados/` | El reporte HTML con los resultados |
 
