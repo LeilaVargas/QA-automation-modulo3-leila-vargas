@@ -14,16 +14,23 @@ def es_numero_primo(n):
     return True
 
 
-def pedir_numero():
-    while True:
-        dato = input("Ingresa un numero entero: ")
-        try:
-            return int(dato)
-        except ValueError:
-            print("Eso no es un numero entero, proba de nuevo.")
+print("Hola! Bienvenida al programa de numeros primos")
+print("Escribi un numero entero, o 'salir' para terminar.")
 
+while True:
+    dato = input("Numero: ").strip()
 
-if __name__ == "__main__":
-    numero = pedir_numero()
-    resultado = "es primo" if es_numero_primo(numero) else "no es primo"
-    print(f"{numero} {resultado}")
+    if dato.lower() == "salir":
+        print("Gracias por usar el programa, hasta luego!")
+        break
+
+    try:
+        numero = int(dato)
+    except ValueError:
+        print("Eso no es un numero entero, proba de nuevo.")
+        continue
+
+    if es_numero_primo(numero):
+        print(f"{numero} es primo")
+    else:
+        print(f"{numero} no es primo")
